@@ -1,0 +1,107 @@
+﻿<!doctype html>
+<html lang="ja">
+<html>
+<head>
+<title>コンテンツ</title>
+<!--link rel="stylesheet" href="css/style.css"-->
+<style>
+ul{
+	list-style-type: none;
+}
+a {
+	color: #666;	/*リンクテキストの色*/
+}
+a:hover {
+	color: #7badc9;			/*マウスオン時の文字色*/
+	text-decoration: none;	/*マウスオン時に下線を消す設定。残したいならこの１行削除。*/
+}
+#sub {
+	float: right;	/*右側に回り込み*/
+	width: 230px;	/*サブコンテンツ幅*/
+	padding-bottom: 30px;
+}
+/*１カラム利用時でのsubコンテンツ*/
+.c1 #sub {
+	display: none;	/*表示させない設定*/
+}
+/*メニュー全体の設定*/
+#sub ul.submenu {
+	margin-bottom: 15px;	/*メニューブロックの下に空けるスペース*/
+	border-top: solid 1px #e4e4e4;	/*上の線の線種、幅、色*/
+}
+/*メニュー１個ごとの設定*/
+#sub ul.submenu li {
+	background: #fff;	/*背景色*/
+	border-bottom: solid 1px #e4e4e4;	/*下の線の線種、幅、色*/
+}
+#sub ul.submenu li a {
+	text-decoration: none;
+	display: block;
+	padding: 2px 10px;	/*メニュー内の余白。上下、左右への設定。*/
+}
+
+#sub .box1 {
+	padding: -20px;			/*ボックス内の余白*/
+	margin-bottom: 0px;	/*ボックスの下に空けるスペース*/
+	background: #e4e4e4;	/*背景色*/
+	border-radius: 0px;	/*角丸のサイズ*/
+}
+/*box1内のメニューの設定*/
+#sub .box1 ul.submenu {
+	margin-bottom: 0px;
+}
+nav#menubar ul li {
+	float: left;
+	width: 236px;	/*幅*/
+	text-align: center;	/*文字をセンタリング*/
+	letter-spacing: 0.1em;	/*文字間隔を少し広めにとる設定。*/
+	background: #FFF;	/*背景色（※古いブラウザ用）*/
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#ebebeb));	/*グラデーション*/
+	background: -webkit-linear-gradient(#FFF, #ebebeb);	/*同上*/
+	background: linear-gradient(#FFF, #ebebeb);			/*同上*/
+	margin-left: 10px;			/*メニュー同士のスペース*/
+	border: 1px solid #bcbcbc;	/*線の幅、線種、色*/
+	border-radius: 8px;			/*角丸のサイズ*/
+	-webkit-box-shadow: 1px 2px 5px rgba(0,0,0,0.1);	/*影の設定。右・下・ぼかし幅・色の設定。左4つの数字がRGBでの色指定で最後の小数点が透明度。*/
+	box-shadow: 1px 2px 5px rgba(0,0,0,0.1);			/*同上*/
+	margin-bottom: 20px;	/*メニューと下のコンテンツとの間のスペース*/
+}
+nav#menubar ul li a {
+	text-decoration: none;
+	display: block;
+	padding: 8px 0px;		/*メニュー内の上下、左右へとる余白*/
+}
+/*最初のメニューの設定*/
+nav#menubar ul li:first-child {
+	margin-left: 0;
+}
+/*マウスオン時の設定*/
+nav#menubar ul li:hover {
+	background: #FFF;			/*背景色*/
+	border-radius: 8px;			/*角丸のサイズ*/
+	-webkit-box-shadow: none;	/*メニューの影を消す設定*/
+	box-shadow: none;			/*同上*/
+	position: relative;
+	left: 1px;	/*左から1px移動する*/
+	top: 1px;	/*上から1px移動する*/
+}
+</style>
+</head>
+
+<body>
+<div id="sub">
+<nav class="box1">
+<ul class="submenu mb10">
+
+<li><a href="anime_best10.html" target="_parent">おすすめのアニメ</a></li>
+<li><a href="animes/0000_anime_all.html" target="_parent">アニメタイトル一覧</a></li>
+
+</ul>
+</nav>
+</div>
+</body>
+</html>
+<!--
+<iframe src="contents.html" frameborder="0" width="198" height="150"></iframe>
+-->
+
